@@ -58,9 +58,7 @@ while (~Stop)&& numberOFtrying < 10000
         summurize = summurize + distanceToClaster(j,i,3)*fuzzyCoeficientMatrix(j,i,3);
       end
    end
-    xyu(numberOFtrying,:) = clasterElementA;
- xyu1(numberOFtrying,:) = clasterElementB;
- xyu2(numberOFtrying,:) = clasterElementC;
+
    
    if(numberOFtrying > 1)       
       Stop =  (abs(oldDistance - summurize)<epsilon);
